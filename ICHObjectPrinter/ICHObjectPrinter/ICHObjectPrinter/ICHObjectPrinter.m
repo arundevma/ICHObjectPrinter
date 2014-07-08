@@ -26,7 +26,7 @@
         
         const char* name = property_getName (var);
         
-        NSString *keyValueString = [NSString stringWithFormat:@"\nself.%@ = %@",[NSString stringWithUTF8String:name],[objct valueForKey:[NSString stringWithUTF8String:name]]];
+        NSString *keyValueString = [NSString stringWithFormat:@"\n%@ = %@",[NSString stringWithUTF8String:name],[objct valueForKey:[NSString stringWithUTF8String:name]]];
         [descriptionString appendString:keyValueString];
     }
     
